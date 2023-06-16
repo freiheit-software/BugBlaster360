@@ -2,40 +2,35 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
 	"log"
 	"net/http"
+
+	"bug-blaster-360/database"
+	"bug-blaster-360/router"
 )
 
 func main() {	
-	http.HandleFunc("/health", healthCheckHandler)
+	router.SetupRouter()
 
-	http.HandleFunc("/github/events", handleGitHubRepoPost)
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }
 
-func healthCheckHandler(w http.ResponseWriter, r *http.Request) {
-	w.WriteHeader(http.StatusOK)
 
-	fmt.Fprintln(w, "OK")
-}
 
-func handleGitHubRepoPost(w http.ResponseWriter, r *http.Request) {
-	if r.Method != "POST" {
-		http.Error(w, "Method not allowed", http.StatusMethodNotAllowed)
-		return
-	}
+func connectDatabase(){
+	connectionString := "postgres://username:password@host:port/database?sslmode=disable"
+    db, err := database.Connect(connectionString)
+    if err != nil {
+        fmt.Println("Failed to connect to database:", err)
+        return
+    }
+    defer db.Close()
 
-	// Read the request body
-	body, err := ioutil.ReadAll(r.Body)
-	if err != nil {
-		http.Error(w, "Failed to read request body", http.StatusBadRequest)
-		return
-	}
-
-	// Log the input data
-	log.Printf("Received GitHub repo POST: %s", body)
-
-	// Send a response
-	fmt.Fprintln(w, "Received GitHub repo POST")
+    id := 1
+    tableName := "your_table"
+    err = db.InsertID(id, tableName)
+    if err != nil {
+        fmt.Println("Failed to insert ID:", err)
+        return
+    }
 }
