@@ -7,6 +7,8 @@ import (
 	"log"
 	"net/http"
 
+	"bug-blaster-360/database"
+
 	"github.com/bradleyfalzon/ghinstallation/v2"
 	"github.com/google/go-github/v53/github"
 	"github.com/gorilla/mux"
@@ -20,24 +22,26 @@ func main() {
 	log.Fatal(http.ListenAndServe(":8080", r))
 }
 
-func handleGitHubRepoPost(w http.ResponseWriter, r *http.Request) {
-	if r.Method != "POST" {
-		http.Error(w, "Method not allowed", http.StatusMethodNotAllowed)
-		return
-	}
-
-	// Read the request body
-	body, err := ioutil.ReadAll(r.Body)
+func connectDatabase() {
+	connectionString := "postgres://username:password@host:port/database?sslmode=disable"
+	db, err := database.Connect(connectionString)
 	if err != nil {
-		http.Error(w, "Failed to read request body", http.StatusBadRequest)
+		fmt.Println("Failed to connect to database:", err)
 		return
 	}
+	defer db.Close()
 
-	// Log the input data
-	log.Printf("Received GitHub repo POST: %s", body)
+	id := 1
+	tableName := "your_table"
+	err = db.InsertID(id, tableName)
+	if err != nil {
+		fmt.Println("Failed to insert ID:", err)
+		return
+	}
+}
 
-	// Send a response
-	fmt.Fprintln(w, "Received GitHub repo POST")
+func handleGitHubRepoPost(w http.ResponseWriter, r *http.Request) {
+
 }
 
 func handleResultUpload(w http.ResponseWriter, r *http.Request) {
