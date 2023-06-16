@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="f94059c9-b044-4ae6-8aa3-7384cb137f47" name="@ubuntu 2023-06-16 21:57:15" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2023-06-16T21:57:15.0173600+02:00" queuing="2023-06-16T21:57:15.0173601+02:00" start="2023-06-16T21:57:11.6584363+02:00" finish="2023-06-16T21:57:15.1070470+02:00" />
+  <TestSettings name="default" id="e1484089-8b70-4222-98fe-42503d983573">
+    <Deployment runDeploymentRoot="_ubuntu_2023-06-16_21_57_15" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="968b1e0f-1261-4ede-9510-0b057c0a1e6b" testId="eb24dfbc-ec32-9c9f-3555-98bd84d042a9" testName="facilioo.API.Tests.Unit.ExtensionMethods.JsonExtensionsTest.GetValueReturnsNullOnNonExistingKey" computerName="ubuntu" duration="00:00:00.0004073" startTime="2023-06-16T21:57:14.9857610+02:00" endTime="2023-06-16T21:57:14.9857610+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="968b1e0f-1261-4ede-9510-0b057c0a1e6b" />
+    <UnitTestResult executionId="5d55aecf-dc4d-4d72-9e82-d5829e715c5b" testId="19c62ccd-078b-fe52-6996-2ea115a3da74" testName="facilioo.API.Tests.Unit.ExtensionMethods.JsonExtensionsTest.CreatePatchDocumentThrowsInvalidOperationExceptionOnInvalidValues" computerName="ubuntu" duration="00:00:00.0113351" startTime="2023-06-16T21:57:14.9856379+02:00" endTime="2023-06-16T21:57:14.9856380+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5d55aecf-dc4d-4d72-9e82-d5829e715c5b" />
+    <UnitTestResult executionId="b1ad69a2-40cb-406d-934c-8ebac7cfcf3a" testId="1fc3ada4-c4de-d9bd-ba9e-730bf87d2389" testName="facilioo.API.Tests.Unit.Filters.ApiExceptionFilterAttributeTest.ShouldReturnJsonPatchErrorInProductionMode" computerName="ubuntu" duration="00:00:00.0038524" startTime="2023-06-16T21:57:14.9442707+02:00" endTime="2023-06-16T21:57:14.9442707+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b1ad69a2-40cb-406d-934c-8ebac7cfcf3a" />
+    <UnitTestResult executionId="3068b2a9-a133-452d-bc35-8743fb1badec" testId="0eda2aba-dd0a-b336-e1ff-753463755658" testName="facilioo.API.Tests.Unit.Filters.ApiExceptionFilterAttributeTest.ShouldReturnNotFoundInDevMode" computerName="ubuntu" duration="00:00:00.0001598" startTime="2023-06-16T21:57:14.9504667+02:00" endTime="2023-06-16T21:57:14.9504668+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3068b2a9-a133-452d-bc35-8743fb1badec" />
+    <UnitTestResult executionId="11295eb9-993f-47cc-b3ea-c36f0a76ee71" testId="e9ed5dfe-e311-6fbf-bb86-f7346f99de53" testName="facilioo.API.Tests.Unit.Filters.ApiExceptionFilterAttributeTest.ShouldReturnNotFoundInProductionMode" computerName="ubuntu" duration="00:00:00.0007024" startTime="2023-06-16T21:57:14.9441127+02:00" endTime="2023-06-16T21:57:14.9441127+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="11295eb9-993f-47cc-b3ea-c36f0a76ee71" />
+    <UnitTestResult executionId="c819fe62-1f79-4354-be19-797d010c2a81" testId="094a8489-4c09-5f10-1821-c3647e30a731" testName="facilioo.API.Tests.Unit.Filters.ApiExceptionFilterAttributeTest.ShouldReturnBadRequestErrorInProductionMode" computerName="ubuntu" duration="00:00:00.0001566" startTime="2023-06-16T21:57:14.9507726+02:00" endTime="2023-06-16T21:57:14.9507727+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c819fe62-1f79-4354-be19-797d010c2a81" />
+    <UnitTestResult executionId="df4fd334-c463-493c-8f64-9c868f901dd1" testId="88e7a9d1-79bd-804b-053e-063a1b20a4d8" testName="facilioo.API.Tests.Unit.Filters.ApiExceptionFilterAttributeTest.ShouldReturnGenericErrorInProductionMode" computerName="ubuntu" duration="00:00:00.0006697" startTime="2023-06-16T21:57:14.9505679+02:00" endTime="2023-06-16T21:57:14.9505680+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="df4fd334-c463-493c-8f64-9c868f901dd1" />
+    <UnitTestResult executionId="ed594949-c68b-43e8-9528-cec24b8484f0" testId="30059053-5672-cd36-639c-74d9265b98fd" testName="facilioo.API.Tests.Unit.Filters.ApiExceptionFilterAttributeTest.ShouldReturnBadRequestErrorInDevMode" computerName="ubuntu" duration="00:00:00.0174237" startTime="2023-06-16T21:57:14.9321914+02:00" endTime="2023-06-16T21:57:14.9322329+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ed594949-c68b-43e8-9528-cec24b8484f0" />
+    <UnitTestResult executionId="37b6fc40-8bdb-48a2-bd2d-6b0d83b5cfa2" testId="dda06453-9a64-90e8-bd46-8f9917065d3d" testName="facilioo.API.Tests.Unit.Filters.ApiExceptionFilterAttributeTest.ShouldReturnJsonPatchErrorInDevMode" computerName="ubuntu" duration="00:00:00.0002718" startTime="2023-06-16T21:57:14.9506395+02:00" endTime="2023-06-16T21:57:14.9506396+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="37b6fc40-8bdb-48a2-bd2d-6b0d83b5cfa2" />
+    <UnitTestResult executionId="77df1cc9-17d2-4226-9b0a-6f35e2020efa" testId="360b8d53-d507-7555-5c2b-4c3ef0b9d9c5" testName="facilioo.API.Tests.Unit.ExtensionMethods.JsonExtensionsTest.GetValueReturnsValueOnExistingKey" computerName="ubuntu" duration="00:00:00.0064086" startTime="2023-06-16T21:57:14.9856921+02:00" endTime="2023-06-16T21:57:14.9856921+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="77df1cc9-17d2-4226-9b0a-6f35e2020efa" />
+    <UnitTestResult executionId="28093e73-441d-4b07-a8df-c1eb844a8b77" testId="9d8a28b4-77e0-0373-d803-0b47b4700e74" testName="facilioo.API.Tests.Unit.ExtensionMethods.JsonExtensionsTest.GetValueReturnsNullOnNonObjectType" computerName="ubuntu" duration="00:00:00.0011902" startTime="2023-06-16T21:57:14.9857280+02:00" endTime="2023-06-16T21:57:14.9857281+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="28093e73-441d-4b07-a8df-c1eb844a8b77" />
+    <UnitTestResult executionId="41050af5-e954-408f-a2ea-3f885bddcef8" testId="d6a69349-1dfc-c232-8b5c-d6f6901e848d" testName="facilioo.API.Tests.Unit.ExtensionMethods.JsonExtensionsTest.CreatePatchDocumentCreatesOperationsForAllFields" computerName="ubuntu" duration="00:00:00.0556590" startTime="2023-06-16T21:57:14.9514393+02:00" endTime="2023-06-16T21:57:14.9514394+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="41050af5-e954-408f-a2ea-3f885bddcef8" />
+    <UnitTestResult executionId="e1df33cc-2612-40b6-aabb-eb96d62a12a5" testId="bca4b814-914e-4a62-8cb9-e4dfa767f880" testName="facilioo.API.Tests.Unit.Filters.ApiExceptionFilterAttributeTest.ShouldReturnGenericErrorInDevMode" computerName="ubuntu" duration="00:00:00.0002486" startTime="2023-06-16T21:57:14.9507071+02:00" endTime="2023-06-16T21:57:14.9507079+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e1df33cc-2612-40b6-aabb-eb96d62a12a5" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="facilioo.API.Tests.Unit.Filters.ApiExceptionFilterAttributeTest.ShouldReturnJsonPatchErrorInProductionMode" storage="/home/rebekka/documents/work/facilioo2/facilioo/src/gen2/facilioo/test/facilioo.api.tests.unit/bin/debug/net6.0/facilioo.api.tests.unit.dll" id="1fc3ada4-c4de-d9bd-ba9e-730bf87d2389">
+      <Execution id="b1ad69a2-40cb-406d-934c-8ebac7cfcf3a" />
+      <TestMethod codeBase="/home/rebekka/Documents/work/facilioo2/facilioo/src/gen2/facilioo/test/facilioo.API.Tests.Unit/bin/Debug/net6.0/facilioo.API.Tests.Unit.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="facilioo.API.Tests.Unit.Filters.ApiExceptionFilterAttributeTest" name="ShouldReturnJsonPatchErrorInProductionMode" />
+    </UnitTest>
+    <UnitTest name="facilioo.API.Tests.Unit.ExtensionMethods.JsonExtensionsTest.CreatePatchDocumentThrowsInvalidOperationExceptionOnInvalidValues" storage="/home/rebekka/documents/work/facilioo2/facilioo/src/gen2/facilioo/test/facilioo.api.tests.unit/bin/debug/net6.0/facilioo.api.tests.unit.dll" id="19c62ccd-078b-fe52-6996-2ea115a3da74">
+      <Execution id="5d55aecf-dc4d-4d72-9e82-d5829e715c5b" />
+      <TestMethod codeBase="/home/rebekka/Documents/work/facilioo2/facilioo/src/gen2/facilioo/test/facilioo.API.Tests.Unit/bin/Debug/net6.0/facilioo.API.Tests.Unit.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="facilioo.API.Tests.Unit.ExtensionMethods.JsonExtensionsTest" name="CreatePatchDocumentThrowsInvalidOperationExceptionOnInvalidValues" />
+    </UnitTest>
+    <UnitTest name="facilioo.API.Tests.Unit.ExtensionMethods.JsonExtensionsTest.GetValueReturnsValueOnExistingKey" storage="/home/rebekka/documents/work/facilioo2/facilioo/src/gen2/facilioo/test/facilioo.api.tests.unit/bin/debug/net6.0/facilioo.api.tests.unit.dll" id="360b8d53-d507-7555-5c2b-4c3ef0b9d9c5">
+      <Execution id="77df1cc9-17d2-4226-9b0a-6f35e2020efa" />
+      <TestMethod codeBase="/home/rebekka/Documents/work/facilioo2/facilioo/src/gen2/facilioo/test/facilioo.API.Tests.Unit/bin/Debug/net6.0/facilioo.API.Tests.Unit.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="facilioo.API.Tests.Unit.ExtensionMethods.JsonExtensionsTest" name="GetValueReturnsValueOnExistingKey" />
+    </UnitTest>
+    <UnitTest name="facilioo.API.Tests.Unit.Filters.ApiExceptionFilterAttributeTest.ShouldReturnGenericErrorInDevMode" storage="/home/rebekka/documents/work/facilioo2/facilioo/src/gen2/facilioo/test/facilioo.api.tests.unit/bin/debug/net6.0/facilioo.api.tests.unit.dll" id="bca4b814-914e-4a62-8cb9-e4dfa767f880">
+      <Execution id="e1df33cc-2612-40b6-aabb-eb96d62a12a5" />
+      <TestMethod codeBase="/home/rebekka/Documents/work/facilioo2/facilioo/src/gen2/facilioo/test/facilioo.API.Tests.Unit/bin/Debug/net6.0/facilioo.API.Tests.Unit.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="facilioo.API.Tests.Unit.Filters.ApiExceptionFilterAttributeTest" name="ShouldReturnGenericErrorInDevMode" />
+    </UnitTest>
+    <UnitTest name="facilioo.API.Tests.Unit.Filters.ApiExceptionFilterAttributeTest.ShouldReturnNotFoundInProductionMode" storage="/home/rebekka/documents/work/facilioo2/facilioo/src/gen2/facilioo/test/facilioo.api.tests.unit/bin/debug/net6.0/facilioo.api.tests.unit.dll" id="e9ed5dfe-e311-6fbf-bb86-f7346f99de53">
+      <Execution id="11295eb9-993f-47cc-b3ea-c36f0a76ee71" />
+      <TestMethod codeBase="/home/rebekka/Documents/work/facilioo2/facilioo/src/gen2/facilioo/test/facilioo.API.Tests.Unit/bin/Debug/net6.0/facilioo.API.Tests.Unit.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="facilioo.API.Tests.Unit.Filters.ApiExceptionFilterAttributeTest" name="ShouldReturnNotFoundInProductionMode" />
+    </UnitTest>
+    <UnitTest name="facilioo.API.Tests.Unit.Filters.ApiExceptionFilterAttributeTest.ShouldReturnBadRequestErrorInProductionMode" storage="/home/rebekka/documents/work/facilioo2/facilioo/src/gen2/facilioo/test/facilioo.api.tests.unit/bin/debug/net6.0/facilioo.api.tests.unit.dll" id="094a8489-4c09-5f10-1821-c3647e30a731">
+      <Execution id="c819fe62-1f79-4354-be19-797d010c2a81" />
+      <TestMethod codeBase="/home/rebekka/Documents/work/facilioo2/facilioo/src/gen2/facilioo/test/facilioo.API.Tests.Unit/bin/Debug/net6.0/facilioo.API.Tests.Unit.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="facilioo.API.Tests.Unit.Filters.ApiExceptionFilterAttributeTest" name="ShouldReturnBadRequestErrorInProductionMode" />
+    </UnitTest>
+    <UnitTest name="facilioo.API.Tests.Unit.ExtensionMethods.JsonExtensionsTest.GetValueReturnsNullOnNonExistingKey" storage="/home/rebekka/documents/work/facilioo2/facilioo/src/gen2/facilioo/test/facilioo.api.tests.unit/bin/debug/net6.0/facilioo.api.tests.unit.dll" id="eb24dfbc-ec32-9c9f-3555-98bd84d042a9">
+      <Execution id="968b1e0f-1261-4ede-9510-0b057c0a1e6b" />
+      <TestMethod codeBase="/home/rebekka/Documents/work/facilioo2/facilioo/src/gen2/facilioo/test/facilioo.API.Tests.Unit/bin/Debug/net6.0/facilioo.API.Tests.Unit.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="facilioo.API.Tests.Unit.ExtensionMethods.JsonExtensionsTest" name="GetValueReturnsNullOnNonExistingKey" />
+    </UnitTest>
+    <UnitTest name="facilioo.API.Tests.Unit.ExtensionMethods.JsonExtensionsTest.GetValueReturnsNullOnNonObjectType" storage="/home/rebekka/documents/work/facilioo2/facilioo/src/gen2/facilioo/test/facilioo.api.tests.unit/bin/debug/net6.0/facilioo.api.tests.unit.dll" id="9d8a28b4-77e0-0373-d803-0b47b4700e74">
+      <Execution id="28093e73-441d-4b07-a8df-c1eb844a8b77" />
+      <TestMethod codeBase="/home/rebekka/Documents/work/facilioo2/facilioo/src/gen2/facilioo/test/facilioo.API.Tests.Unit/bin/Debug/net6.0/facilioo.API.Tests.Unit.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="facilioo.API.Tests.Unit.ExtensionMethods.JsonExtensionsTest" name="GetValueReturnsNullOnNonObjectType" />
+    </UnitTest>
+    <UnitTest name="facilioo.API.Tests.Unit.Filters.ApiExceptionFilterAttributeTest.ShouldReturnGenericErrorInProductionMode" storage="/home/rebekka/documents/work/facilioo2/facilioo/src/gen2/facilioo/test/facilioo.api.tests.unit/bin/debug/net6.0/facilioo.api.tests.unit.dll" id="88e7a9d1-79bd-804b-053e-063a1b20a4d8">
+      <Execution id="df4fd334-c463-493c-8f64-9c868f901dd1" />
+      <TestMethod codeBase="/home/rebekka/Documents/work/facilioo2/facilioo/src/gen2/facilioo/test/facilioo.API.Tests.Unit/bin/Debug/net6.0/facilioo.API.Tests.Unit.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="facilioo.API.Tests.Unit.Filters.ApiExceptionFilterAttributeTest" name="ShouldReturnGenericErrorInProductionMode" />
+    </UnitTest>
+    <UnitTest name="facilioo.API.Tests.Unit.ExtensionMethods.JsonExtensionsTest.CreatePatchDocumentCreatesOperationsForAllFields" storage="/home/rebekka/documents/work/facilioo2/facilioo/src/gen2/facilioo/test/facilioo.api.tests.unit/bin/debug/net6.0/facilioo.api.tests.unit.dll" id="d6a69349-1dfc-c232-8b5c-d6f6901e848d">
+      <Execution id="41050af5-e954-408f-a2ea-3f885bddcef8" />
+      <TestMethod codeBase="/home/rebekka/Documents/work/facilioo2/facilioo/src/gen2/facilioo/test/facilioo.API.Tests.Unit/bin/Debug/net6.0/facilioo.API.Tests.Unit.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="facilioo.API.Tests.Unit.ExtensionMethods.JsonExtensionsTest" name="CreatePatchDocumentCreatesOperationsForAllFields" />
+    </UnitTest>
+    <UnitTest name="facilioo.API.Tests.Unit.Filters.ApiExceptionFilterAttributeTest.ShouldReturnNotFoundInDevMode" storage="/home/rebekka/documents/work/facilioo2/facilioo/src/gen2/facilioo/test/facilioo.api.tests.unit/bin/debug/net6.0/facilioo.api.tests.unit.dll" id="0eda2aba-dd0a-b336-e1ff-753463755658">
+      <Execution id="3068b2a9-a133-452d-bc35-8743fb1badec" />
+      <TestMethod codeBase="/home/rebekka/Documents/work/facilioo2/facilioo/src/gen2/facilioo/test/facilioo.API.Tests.Unit/bin/Debug/net6.0/facilioo.API.Tests.Unit.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="facilioo.API.Tests.Unit.Filters.ApiExceptionFilterAttributeTest" name="ShouldReturnNotFoundInDevMode" />
+    </UnitTest>
+    <UnitTest name="facilioo.API.Tests.Unit.Filters.ApiExceptionFilterAttributeTest.ShouldReturnBadRequestErrorInDevMode" storage="/home/rebekka/documents/work/facilioo2/facilioo/src/gen2/facilioo/test/facilioo.api.tests.unit/bin/debug/net6.0/facilioo.api.tests.unit.dll" id="30059053-5672-cd36-639c-74d9265b98fd">
+      <Execution id="ed594949-c68b-43e8-9528-cec24b8484f0" />
+      <TestMethod codeBase="/home/rebekka/Documents/work/facilioo2/facilioo/src/gen2/facilioo/test/facilioo.API.Tests.Unit/bin/Debug/net6.0/facilioo.API.Tests.Unit.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="facilioo.API.Tests.Unit.Filters.ApiExceptionFilterAttributeTest" name="ShouldReturnBadRequestErrorInDevMode" />
+    </UnitTest>
+    <UnitTest name="facilioo.API.Tests.Unit.Filters.ApiExceptionFilterAttributeTest.ShouldReturnJsonPatchErrorInDevMode" storage="/home/rebekka/documents/work/facilioo2/facilioo/src/gen2/facilioo/test/facilioo.api.tests.unit/bin/debug/net6.0/facilioo.api.tests.unit.dll" id="dda06453-9a64-90e8-bd46-8f9917065d3d">
+      <Execution id="37b6fc40-8bdb-48a2-bd2d-6b0d83b5cfa2" />
+      <TestMethod codeBase="/home/rebekka/Documents/work/facilioo2/facilioo/src/gen2/facilioo/test/facilioo.API.Tests.Unit/bin/Debug/net6.0/facilioo.API.Tests.Unit.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="facilioo.API.Tests.Unit.Filters.ApiExceptionFilterAttributeTest" name="ShouldReturnJsonPatchErrorInDevMode" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="eb24dfbc-ec32-9c9f-3555-98bd84d042a9" executionId="968b1e0f-1261-4ede-9510-0b057c0a1e6b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="19c62ccd-078b-fe52-6996-2ea115a3da74" executionId="5d55aecf-dc4d-4d72-9e82-d5829e715c5b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1fc3ada4-c4de-d9bd-ba9e-730bf87d2389" executionId="b1ad69a2-40cb-406d-934c-8ebac7cfcf3a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0eda2aba-dd0a-b336-e1ff-753463755658" executionId="3068b2a9-a133-452d-bc35-8743fb1badec" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e9ed5dfe-e311-6fbf-bb86-f7346f99de53" executionId="11295eb9-993f-47cc-b3ea-c36f0a76ee71" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="094a8489-4c09-5f10-1821-c3647e30a731" executionId="c819fe62-1f79-4354-be19-797d010c2a81" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="88e7a9d1-79bd-804b-053e-063a1b20a4d8" executionId="df4fd334-c463-493c-8f64-9c868f901dd1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="30059053-5672-cd36-639c-74d9265b98fd" executionId="ed594949-c68b-43e8-9528-cec24b8484f0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dda06453-9a64-90e8-bd46-8f9917065d3d" executionId="37b6fc40-8bdb-48a2-bd2d-6b0d83b5cfa2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="360b8d53-d507-7555-5c2b-4c3ef0b9d9c5" executionId="77df1cc9-17d2-4226-9b0a-6f35e2020efa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9d8a28b4-77e0-0373-d803-0b47b4700e74" executionId="28093e73-441d-4b07-a8df-c1eb844a8b77" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d6a69349-1dfc-c232-8b5c-d6f6901e848d" executionId="41050af5-e954-408f-a2ea-3f885bddcef8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bca4b814-914e-4a62-8cb9-e4dfa767f880" executionId="e1df33cc-2612-40b6-aabb-eb96d62a12a5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="13" executed="13" passed="13" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.4.3+1b45f5407b (64-bit .NET 6.0.3)
+[xUnit.net 00:00:01.95]   Discovering: facilioo.API.Tests.Unit
+[xUnit.net 00:00:02.03]   Discovered:  facilioo.API.Tests.Unit
+[xUnit.net 00:00:02.04]   Starting:    facilioo.API.Tests.Unit
+[xUnit.net 00:00:02.25]   Finished:    facilioo.API.Tests.Unit
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>
