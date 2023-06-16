@@ -7,9 +7,17 @@ import (
 	"net/http"
 )
 
-func main() {
+func main() {	
+	http.HandleFunc("/health", healthCheckHandler)
+
 	http.HandleFunc("/github/events", handleGitHubRepoPost)
 	log.Fatal(http.ListenAndServe(":8080", nil))
+}
+
+func healthCheckHandler(w http.ResponseWriter, r *http.Request) {
+	w.WriteHeader(http.StatusOK)
+
+	fmt.Fprintln(w, "OK")
 }
 
 func handleGitHubRepoPost(w http.ResponseWriter, r *http.Request) {
