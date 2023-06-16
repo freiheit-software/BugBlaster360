@@ -10,5 +10,6 @@ func SetupRouter() {
 	http.HandleFunc("/health", handlers.Health)
 	http.HandleFunc("/commit/", handlers.Commit)
 	http.HandleFunc("/github/events", handlers.HandleGitHubRepoPost)
+	http.HandleFunc("/results", handlers.HandleResultUpload)
+	http.HandleFunc("/debug", handlers.HandleDebug)
 }
-
