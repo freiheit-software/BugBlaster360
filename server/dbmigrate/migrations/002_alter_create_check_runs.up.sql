@@ -1,2 +1,2 @@
 ALTER TABLE check_runs
-ADD COLUMN installationid INTEGER;
+ADD COLUMN installation_id INTEGER;
