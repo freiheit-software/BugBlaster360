@@ -20,7 +20,7 @@ func Commit(w http.ResponseWriter, r *http.Request) {
 	}
 	fmt.Println("akk:", string(body))
 
-	db, err := database.Connect("postgres://admin:bugblaster360@localhost:5432/mydb?sslmode=disable")
+	db, err := database.Connect("postgres://admin:bugblaster360@localhost:6543/mydb?sslmode=disable")
 
 	data := map[string]interface{}{
 		"check_run_id": id,

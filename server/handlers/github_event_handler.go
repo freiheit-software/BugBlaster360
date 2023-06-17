@@ -1,6 +1,7 @@
 package handlers
 
 import (
+	"bug-blaster-360/database"
 	"context"
 	"encoding/json"
 	"fmt"
@@ -42,8 +43,20 @@ func HandleGitHubRepoPost(w http.ResponseWriter, r *http.Request) {
 		}
 
 		checkrun, _, _ := client.Checks.CreateCheckRun(ctx, "facilioo", "facilioo", options)
-
 		var checkrunId = checkrun.GetID()
+
+		db, _ := database.Connect("postgres://admin:bugblaster360@localhost:6543/mydb?sslmode=disable")
+
+		data := map[string]interface{}{
+			"check_run_id":    checkrunId,
+			"commit_hash":     commitSHA,
+			"installation_id": installationId,
+		}
+
+		tableName := "check_runs"
+		db.InsertData(tableName, data)
+
+		db.Close()
 
 		fmt.Println(checkrunId)
 

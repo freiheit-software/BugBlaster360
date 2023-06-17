@@ -19,7 +19,7 @@ func main() {
 
 func migrate() {
 	fmt.Println("Logging a message to the console.")
-	connectionString := "postgres://admin:bugblaster360@localhost:5432/mydb?sslmode=disable" //os.Getenv("DB_CONNECTION_STRING")
+	connectionString := "postgres://admin:bugblaster360@localhost:6543/mydb?sslmode=disable" //os.Getenv("DB_CONNECTION_STRING")
 	fmt.Println("connectionString", connectionString)
 
 	dbmigrate.ApplyMigrations()
