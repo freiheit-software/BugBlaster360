@@ -45,6 +45,8 @@ func HandleGitHubRepoPost(w http.ResponseWriter, r *http.Request) {
 
 		var checkrunId = checkrun.GetID()
 
+		fmt.Println(checkrunId)
+
 	} else {
 		fmt.Println("fail")
 	}
