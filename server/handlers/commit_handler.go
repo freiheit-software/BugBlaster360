@@ -2,11 +2,10 @@ package handlers
 
 import (
 	"fmt"
-	"encoding/json"
 	"io/ioutil"
 	"net/http"
 
-	"bug-blaster-360/models"
+	"bug-blaster-360/database"
 )
 
 func Commit(w http.ResponseWriter, r *http.Request) {
@@ -19,20 +18,22 @@ func Commit(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "Failed to read request body", http.StatusBadRequest)
 		return
 	}
+	fmt.Println("akk:", string(body))
 
-	// Parse the JSON data
-	var jsonData models.Commit
-	err = json.Unmarshal(body, &jsonData)
-	if err != nil {
-		http.Error(w, "Failed to parse JSON data", http.StatusBadRequest)
-		return
+	db, err := database.Connect("postgres://admin:bugblaster360@localhost:5432/mydb?sslmode=disable")
+
+	data := map[string]interface{}{
+		"check_run_id": id,
+		"commit_hash":  string(body),
 	}
 
-	// Access the ID and data fields from the parsed JSON
-	fmt.Println("ID:", jsonData.ID)
-	fmt.Println("Data:", jsonData.Data)
+	tableName := "check_runs"
+	db.InsertData(tableName, data)
 
-	// Handle the JSON data as required
+	db.Close()
+	/* if err != nil {
+		log.Fatal(err)
+	} */
 
 	fmt.Fprintln(w, "Received JSON data successfully!")
 }
