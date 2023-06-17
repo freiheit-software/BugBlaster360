@@ -5,10 +5,11 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"github.com/bradleyfalzon/ghinstallation/v2"
-	"github.com/google/go-github/v53/github"
 	"io/ioutil"
 	"net/http"
+
+	"github.com/bradleyfalzon/ghinstallation/v2"
+	"github.com/google/go-github/v53/github"
 )
 
 func HandleGitHubRepoPost(w http.ResponseWriter, r *http.Request) {
@@ -26,10 +27,10 @@ func HandleGitHubRepoPost(w http.ResponseWriter, r *http.Request) {
 	var response github.CheckSuiteEvent
 	json.Unmarshal(body, &response)
 
-	var installationId = response.GetInstallation().GetID()
-	var commitSHA = response.GetCheckSuite().GetHeadSHA()
-
 	if response.GetAction() == "requested" && response.GetCheckSuite() != nil {
+		var installationId = response.GetInstallation().GetID()
+		var commitSHA = response.GetCheckSuite().GetHeadSHA()
+
 		fmt.Println("success")
 
 		ctx := context.Background()

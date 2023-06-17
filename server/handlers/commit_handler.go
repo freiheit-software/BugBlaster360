@@ -30,7 +30,7 @@ func Commit(w http.ResponseWriter, r *http.Request) {
 	tableName := "check_runs"
 	db.InsertData(tableName, data)
 
-	db.Close()
+	defer db.Close()
 	/* if err != nil {
 		log.Fatal(err)
 	} */
